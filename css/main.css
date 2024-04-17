@@ -1,0 +1,273 @@
+* {
+    font-family: "Lato", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+/* =========================== HEADER =========================== */
+header {
+    position: absolute;
+    width: 100%;
+    background-color: transparent;
+    z-index: 3;
+}
+
+.container {
+    max-width: 1400px;
+}
+
+.navbar .collapse {
+    justify-content:flex-end;
+}
+
+.nav-link {
+    color: white !important;
+    transition: .2s;
+}
+
+.nav-link:hover {
+    color: lightgray !important;
+    border-radius: 8px;
+}
+
+.navbar-brand span {
+    font-weight: bold;
+    color: ghostwhite;
+}
+.navbar-brand span.web_logo {
+    color: red;
+}
+
+.main-menu {
+    padding-top: 20px;
+}
+
+/* =========================== BANNER =========================== */
+
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65vh;
+}
+
+.banner .container {
+    z-index: 2;
+}
+
+
+.banner .container h1 {
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 4px black;
+}
+
+.banner .square_banner span {
+    display: block;
+    font-size: 21px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: red;
+    text-align: center;
+}
+
+.banner video {
+    position: absolute;
+    z-index: 1;
+    height: 65vh;
+    width: 100%;
+    object-fit: cover;
+    filter:brightness(0.2);
+}
+
+/* =========================== PRODUCT SECTION =========================== */
+
+section.product_section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: whitesmoke;
+}
+
+.product_row {
+    justify-content: space-between;
+}
+
+.product_cart {
+    margin-bottom: 30px;
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+    width: 32% !important;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+}
+
+.product_image {
+    height: 300px;
+    filter:brightness(0.5);
+    transition: .2s;
+}
+
+.product_cart:hover .product_image {
+    filter: brightness(1)
+}
+.product_cart .product_image img {
+    width: 100%;
+    height: 100%;
+}
+
+.product_description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding-top: 15px;
+}
+
+.product_description ul li {
+    list-style-type: none;
+    font-weight: bold;
+}
+
+.product_description ul li span {
+    font-weight: normal;
+    margin-left: 8px;
+    font-style: italic;
+}
+
+.product_description ul li i {
+    color: red;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+.product_description button {
+    margin-left: 40px;
+    padding: 10px;
+    color: white;
+    background-color: red;
+    border: 0px;
+    transition: .2s;
+}
+
+.product_description button:hover {
+    background-color: white;
+    color: black;
+}
+
+
+/* =========================== FORM =========================== */
+
+.form {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 350px;
+    background-color: whitesmoke;
+}
+
+.form h2 {
+    text-align: left;
+}
+.form_area p,
+.form_area .form_name {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.buybtn {
+    margin-top: 20px;
+    padding: 6px 15px;
+    border: 1px solid red;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    transition: .2s;
+}
+
+.buybtn:hover {
+    background-color: white;
+    color: black;
+    border-color: black;
+}
+
+#leasing {
+    margin-bottom: 20px;
+}
+
+.summary {
+    position: relative;
+    text-align: left;
+}
+
+.summary p {
+    font-weight: bold;
+}
+.summary button {
+    position: absolute;
+    bottom: 0;
+}
+
+
+
+
+/* =========================== FOOTER =========================== */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+footer .socialmedia {
+    margin-bottom: 10px;
+}
+
+footer .socialmedia a {
+    color: white;
+    font-size: 25px;
+    margin: 10px;
+    transition: .2s;
+}
+
+footer .socialmedia a:hover {
+    color: red;
+}
+
+footer p {
+    color: gray;
+    margin-bottom: 0;
+}
+
+
+/* =========================== RESPONSIVE =========================== */
+
+
+@media (max-width: 1199px) {
+    .product_cart {
+        width: 48% !important;
+    }
+}
+@media (max-width: 991px) {
+    .product_cart {
+        width: 48% !important;
+    }
+}
+@media (max-width: 767px) {
+    .product_cart {
+        width: 100% !important;
+    }
+}
+@media (max-width: 575px) {
+    .product_cart {
+        width: 100% !important;
+    }
+}
