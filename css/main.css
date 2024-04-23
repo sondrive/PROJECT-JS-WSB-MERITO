@@ -4,6 +4,20 @@
     margin: 0;
 }
 
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+
+h2 {
+    font-weight: bold !important;
+    text-transform: uppercase;
+    margin-bottom: 30px !important;
+}
+
 /* =========================== HEADER =========================== */
 header {
     position: absolute;
@@ -84,7 +98,6 @@ header {
 }
 
 /* =========================== PRODUCT SECTION =========================== */
-
 section.product_section {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -146,7 +159,9 @@ section.product_section {
     margin-right: 8px;
 }
 
-.product_description button {
+.product_description button,
+.finally_section button,
+.form button {
     margin-left: 40px;
     padding: 10px;
     color: white;
@@ -155,7 +170,9 @@ section.product_section {
     transition: .2s;
 }
 
-.product_description button:hover {
+.product_description button:hover,
+.finally_section button:hover,
+.form button:hover {
     background-color: white;
     color: black;
 }
@@ -168,6 +185,7 @@ section.product_section {
     padding-bottom: 40px;
     padding-left: 350px;
     background-color: whitesmoke;
+    transition: .2s;
 }
 
 .form h2 {
@@ -179,7 +197,8 @@ section.product_section {
     margin-top: 20px;
 }
 
-.buybtn {
+.buybtn,
+.backBtn {
     margin-top: 20px;
     padding: 6px 15px;
     border: 1px solid red;
@@ -189,7 +208,8 @@ section.product_section {
     transition: .2s;
 }
 
-.buybtn:hover {
+.buybtn:hover,
+.backBtn:hover {
     background-color: white;
     color: black;
     border-color: black;
@@ -212,7 +232,63 @@ section.product_section {
     bottom: 0;
 }
 
+.add_items {
+    margin-bottom: 15px;
+}
+.add_items p{
+    display: inline;
+}
 
+.add {
+    display: inline;
+    padding: 7px;
+    margin-left: 10px;
+    color: white;
+    background-color: red;
+    cursor: pointer;
+}
+
+.add:hover {
+    color: black;
+    background-color: white;
+}
+
+.green {
+    background-color: green;
+}
+
+.nameError {
+    display: none;
+}
+
+
+/* =========================== FINALLY =========================== */
+
+.finally_section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+    background-color: whitesmoke;
+}
+
+.finally_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.finally_text p {
+    font-weight: bold;
+    font-size: 21px;
+}
+
+.finally_text p span {
+    color: red;
+}
+
+.finally_text a {
+    text-decoration: none;
+}
 
 
 /* =========================== FOOTER =========================== */
@@ -265,9 +341,17 @@ footer p {
     .product_cart {
         width: 100% !important;
     }
+
+    .finally_text {
+        padding-top: 30px;
+    }
 }
 @media (max-width: 575px) {
     .product_cart {
         width: 100% !important;
+    }
+
+    .finally_text {
+        padding-top: 30px;
     }
 }
