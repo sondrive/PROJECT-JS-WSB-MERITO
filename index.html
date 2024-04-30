@@ -90,7 +90,7 @@
                 <img
                   src="img/truck1.jpg"
                   alt="product image"
-                  class="img-fluid"
+                  class="img-fluid myImage"
                 />
               </div>
               <div class="product_description">
@@ -130,7 +130,7 @@
                 <img
                   src="img/truck2.jpg"
                   alt="product image"
-                  class="img-fluid"
+                  class="img-fluid myImage"
                 />
               </div>
               <div class="product_description">
@@ -161,7 +161,7 @@
                 <img
                   src="img/excavator1.jpg"
                   alt="product image"
-                  class="img-fluid"
+                  class="img-fluid myImage"
                 />
               </div>
               <div class="product_description">
@@ -193,7 +193,7 @@
                 <img
                   src="img/excavator2.jpg"
                   alt="product image"
-                  class="img-fluid"
+                  class="img-fluid myImage"
                 />
               </div>
               <div class="product_description">
@@ -225,7 +225,7 @@
                 <img
                   src="img/loader.jpg"
                   alt="product image"
-                  class="img-fluid"
+                  class="img-fluid myImage"
                 />
               </div>
               <div class="product_description">
@@ -257,7 +257,7 @@
                 <img
                   src="img/excavator2.jpg"
                   alt="product image"
-                  class="img-fluid"
+                  class="img-fluid myImage"
                 />
               </div>
               <div class="product_description">
@@ -291,7 +291,7 @@
                 <div class="container">
                   <h2>Formularz zakupu</h2>
                   <div class="row">
-                    <div class="col-lg-6 form_area">
+                    <div class="col-sm-6 col-lg-6 form_area">
                       <form>
                       <p>Wybierz formę płatności:</p>
                         <input
@@ -309,13 +309,16 @@
                           value="Leasing"
                         />
                         <label for="leasing">Leasing</label></br>
+
+                        <span class="paymentError">Wybierz formę płatności!</span>
   
                         <label for="fname" class="form_name">Imię i nazwisko:</label><br>
                         <input type="text" id="fname" name="fname"></br>
                         <span class="nameError">Podaj imię i nazwisko!!</span>
 
                         <p>Data odbioru maszyny:</p>
-                        <input type="date">
+                        <input type="date" id="data">
+                        <span class="dataError">Wybierz datę max 2 tygodnie do przodu</span>
 
                         <p>Dodatkowe akcesoria:</p>
                       
@@ -324,8 +327,6 @@
                         </br>
                           <p>Kamera cofania: 15000PLN</p><span id="addCamera" class="add">+</span><span id="subCamera" class="add">-</span>
                         </div>
-                    
-                    
                     </form>
 
                     <button class="finishBuy">Kup</button>
@@ -333,7 +334,7 @@
 
                     </div>
 
-                    <div class="col-lg-6 summary">
+                    <div class="col-sm-6 col-lg-6 summary">
                       <p class="total_price">Cena całkowita: <span class="final_price"></span> </p>
                       <p class="selection_machine">Wybrana maszyna: <span class="selected_machine"></span> </p>
                       <button class="backBtn">Wróc</button>
@@ -343,15 +344,13 @@
       </section>
 
       <section class="finally_section hidden">
-        <h2>Dziękujemy za zakup!</h2>
         <div class="container">
+          <h2>Dziękujemy za zakup!</h2>
           <div class="row">
-            <div class="col-md-6 our_machine_photo">
-              <img src="/img/truck1.jpg" class="img-fluid" alt="your_machine">
-            </div>
+            <div class="col-md-6 our_machine_photo"></div>
             <div class="col-md-6 finally_text">
               <p>Gratulujemy zakupu maszyny <span class="choice"></span>!</p>
-              <p>Maszynę dostarczymy w ciągu dwóch tygodni</p>
+              <p>Maszynę dostarczymy <span class="finalData"></span></p>
               <div><button class="backBtnFinal">Wróc do zakupów</button></div>
             </div>
           </div>
